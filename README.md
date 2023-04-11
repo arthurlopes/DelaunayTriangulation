@@ -8,7 +8,7 @@ This repository contains a C++ implementation of the Delaunay triangulation algo
 ## Building the Project
 1. Clone the repository:
 ```bash
-git clone https://https://github.com/arthurlopes/DelaunayTriangulation.git
+git clone https://github.com/arthurlopes/DelaunayTriangulation.git
 cd delaunay-triangulation
 ```
 
@@ -50,5 +50,6 @@ int main() {
     // Do something with the triangulation
 }
 ```
-Contributing
+
+## Contributing
 Contributions to improve the implementation, fix bugs, or add features are welcome! Please submit a pull request or open an issue to discuss any changes or report bugs.
