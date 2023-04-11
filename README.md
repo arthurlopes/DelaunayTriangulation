@@ -65,5 +65,13 @@ int main() {
 }
 ```
 
+## Implementation Based on
+
+This Delaunay Triangulation implementation is based on the following paper:
+
+> Liu, Y., Feng, J., & Shao, Y. (2013). [A Simple Sweep-line Delaunay Triangulation Algorithm](http://paper.academicpub.org/Paper?id=15630). *Journal of Algorithms and Optimization, 2013*, pages 30-38.
+
+Please refer to the paper for more details on the algorithm and its theoretical background.
+
 ## Contributing
 Contributions to improve the implementation, fix bugs, or add features are welcome! Please submit a pull request or open an issue to discuss any changes or report bugs.
