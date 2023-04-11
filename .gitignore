@@ -1,32 +1,88 @@
-# Prerequisites
-*.d
+# Ignore CMake build output
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
 
-# Compiled Object files
-*.slo
-*.lo
+# Ignore Makefile output
+*.o
+*.a
+*.so
+*.d
+*.lib
+*.dll
+*.exe
+*.dylib
+
+# Ignore Visual Studio Code files
+.vscode/
+
+# Ignore JetBrains IDE files
+.idea/
+
+# Ignore macOS files
+.DS_Store
+*.swp
+*.swo
+
+# Ignore user-specific and backup files
+*~
+*.bak
+*.swp
+*.swo
+*.orig
+*.rej
+
+# Ignore object files, libraries, executables, and other generated files
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
 *.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
 *.lib
-
-# Executables
+*.dll
 *.exe
+*.dylib
 *.out
 *.app
+*.elf
+*.lss
+*.eep
+*.hex
+*.bin
+*.axf
+*.map
+*.lst
+*.sym
+*.bc
+*.ilk
+*.pdb
+*.idb
+*.suo
+*.exp
+*.ncb
+*.user
+*.ipch
+*.tlb
+*.tlh
+*.bak
+*.log
+*.tlog
+*.tmh
+*.old
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.qmlproject.user
+*.qmlproject.user.*
+*.autosave
+
+# Ignore CTest and CMake artifacts
+CTestTestfile.cmake
+CTestScript.cmake
+CTestCustom.cmake
+CPackConfig.cmake
+CPackSourceConfig.cmake
+
+*.vcxproj*
+*.sln
+*.recipe
