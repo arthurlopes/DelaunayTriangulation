@@ -489,7 +489,7 @@ void DelaunayTriangulation(std::vector<std::shared_ptr<float2>> const& points, s
     }
 }
 
-void RunDelaunayTriangulation(std::vector<float2> const& points, std::vector<std::shared_ptr<Triangle>> triangles) {
+void RunDelaunayTriangulation(std::vector<float2> const& points, std::vector<std::shared_ptr<Triangle>>& triangles) {
     if (points.size() < 3) {
         return;
     }

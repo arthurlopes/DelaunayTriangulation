@@ -194,5 +194,6 @@ void Legalize_recursive(std::shared_ptr<Triangle> t1, std::shared_ptr<Triangle> 
 bool IsPointOnLeftOfEdge(Edge const& edge, std::shared_ptr<float2> const& point);
 void InitializeDelaunay(std::vector<std::shared_ptr<float2>>& stars, std::list< std::shared_ptr<Edge>>& hull, std::vector<std::shared_ptr<Triangle>>& triangles);
 void DelaunayTriangulation(std::vector<std::shared_ptr<float2>> const& stars, std::list< std::shared_ptr<Edge>>& hull, std::vector<std::shared_ptr<Triangle>>& triangles);
+void RunDelaunayTriangulation(std::vector<float2> const& points, std::vector<std::shared_ptr<Triangle>>& triangles);
 
 }
