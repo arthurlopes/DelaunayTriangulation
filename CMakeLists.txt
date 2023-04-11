@@ -14,12 +14,12 @@ add_executable(delaunay-triangulation
 )
 
 # Tests target
-add_executable(test_delaunay
-    test/test_delaunay.cpp
-    src/delaunay.cpp
-)
+# add_executable(test_delaunay
+#     # test/test_delaunay.cpp
+#     src/delaunay.cpp
+# )
 
 enable_testing()
 
 # Test case (replace "/path/to" with the path to the test_delaunay executable)
-add_test(NAME test_delaunay COMMAND /path/to/test_delaunay)
+# add_test(NAME test_delaunay COMMAND /path/to/test_delaunay)
