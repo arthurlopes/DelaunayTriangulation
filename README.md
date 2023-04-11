@@ -55,7 +55,7 @@ To use the Delaunay triangulation implementation in your own projects, include t
 #include <vector>
 
 int main() {
-    std::vector<Point> points = {{0.0, 0.0}, {1.0, 0.0}, {0.0, 1.0}, {1.0, 1.0}, {0.5, 0.5}};
+    std::vector<float2> points = {{0.0, 0.0}, {1.0, 0.0}, {0.0, 1.0}, {1.0, 1.0}, {0.5, 0.5}};
 
     // Run triangulation
     std::vector<std::shared_ptr<Triangle>> triangles;
