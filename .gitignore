@@ -86,3 +86,4 @@ CPackSourceConfig.cmake
 *.vcxproj*
 *.sln
 *.recipe
+*.txt

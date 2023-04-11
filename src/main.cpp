@@ -1,6 +1,9 @@
 #include <iostream>
 #include <random>
 #include <vector>
+#include <fstream>
+#include <iostream>
+#include <filesystem>
 #include "delaunay.h"
 
 using namespace delaunay;
@@ -40,8 +43,8 @@ void printTriangles(const std::vector<std::shared_ptr<Triangle>>& triangles) {
     }
 }
 
-int main() {
-    int num_points = 10; // Set the desired number of random points
+int main(int argc, char* argv[]) {
+    int num_points = 100; // Set the desired number of random points
 
     // Configure the distributions
     std::uniform_real_distribution<> x_dist(0.0, 10.0);
@@ -58,6 +61,27 @@ int main() {
 
     RunDelaunayTriangulation(points, triangles);
     printTriangles(triangles);
+
+    std::filesystem::path base_path = ".";
+    if (argc > 1) {
+        base_path = argv[1];
+    }
+    std::filesystem::path points_path = base_path / "points.txt";
+    std::filesystem::path triangles_path = base_path / "triangles.txt";
+
+    std::ofstream filep;
+    filep.open(points_path);
+    for (const auto s : points) {
+        filep << "(" << s.x << ", " << s.y << "),\n";
+    }
+    filep.close();
+
+    std::ofstream file;
+    file.open(triangles_path);
+    for (const auto t : triangles) {
+        file << "((" << t->a->x << ", " << t->a->y << "), " << "(" << t->b->x << ", " << t->b->y << "), " << "(" << t->c->x << ", " << t->c->y << ")),\n";
+    }
+    file.close();
 
     return 0;
 }
