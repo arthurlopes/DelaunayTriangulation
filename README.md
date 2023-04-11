@@ -10,8 +10,8 @@ This repository contains a C++ implementation of the Delaunay triangulation algo
   <img src="images/delaunay_example2.png" width="45%" alt="Example 2">
 </p>
 
-* Example 1 (left): A Delaunay triangulation generated from a set of random points uniformely distributed.
-* Example 2 (right): Another Delaunay triangulation with a different set of points based on a normal distribution.*
+* Example 1 (left): A Delaunay triangulation generated from a set of random points uniformly distributed.
+* Example 2 (right): Another Delaunay triangulation with a different set of points based on a normal distribution.
 
 <!-- ... -->
 
