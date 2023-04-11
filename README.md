@@ -1,6 +1,20 @@
 # Delaunay Triangulation Implementation in C++
 This repository contains a C++ implementation of the Delaunay triangulation algorithm, a technique used in computational geometry to generate a triangular mesh from a set of points. The triangulation maximizes the minimum angle of all the triangles in the mesh, ensuring that the triangulation is as close to equilateral as possible.
 
+<!-- ... -->
+
+## Example Images
+
+<p float="left">
+  <img src="images/delaunay_example1.png" width="45%" style="margin-right: 10px;" alt="Example 1">
+  <img src="images/delaunay_example2.png" width="45%" alt="Example 2">
+</p>
+
+* Example 1 (left): A Delaunay triangulation generated from a set of random points uniformely distributed.
+* Example 2 (right): Another Delaunay triangulation with a different set of points based on a normal distribution.*
+
+<!-- ... -->
+
 ## Prerequisites
 * C++ compiler with support for C++17 (e.g., GCC, Clang, or MSVC)
 * CMake 3.10 or later
